@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact-Me</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+    <link rel="stylesheet" href="./css/styles.css"> 
 </head>
 <body>
     <header>
@@ -18,22 +19,22 @@
                     <li><a href="./Services.html">Services</a></li>
                     <li><a href="./Experiences.html">Experiences</a></li>
                     <li><a href="./Works.html">Works</a></li>
-                    <li><button class="button" id="button1">Contact me</button></li>
+                    <li><button class="button" id="button_contact">Contact me</button></li>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Contact</h2>
-        <img class="image"  src="./images/Contact-me-img.jpg" alt="">
-        <h3>Get In Touch</h3>
-        <div class="follow">
+    <main class="">
+        <h2 id="block--contact_elem--h2">Contact</h2>
+        <img class="block--contact_elem--img"  src="./images/Contact-me-img.jpg" alt="">
+        <h3 id="block--contact_elem--h3">Get In Touch</h3>
+        <div class="block--contact--follow">
         <p>Follow me elsewhere</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Reprehenderit aperiam inventore consequuntur provident natus fugit, id eum, <br> saepe fuga dolore nemo porro ipsam aliquid omnis laboriosam ratione quas totam excepturi.</p>
         </div>
-        <div class="message">
+        <div class="block--contact--message">
             <div class="div">
                 <label for="name">Your Name</label><br>
                 <input type="text" id="name"><br>
@@ -43,43 +44,44 @@
                 <input type="text" id="email"><br>
             </div>
         </div>
-            <div class="div3">
+            <div class="block--submitmessage">
                 <label for="message">Message</label><br>
                 <input type="text" id="message"> <br>
                 <div class="center">
                     <button class="button" id="button2">Submit Message</button>
                   </div> 
             </div>
-        <div class="Social">
+        <div class="block--contact--social">
             <h6>Social Media:</h6>
-            <a href="#" class="fa fa-facebook"></a><br> 
-            <a href="#" class="fa fa-instagram"></a><br>
-            <a href="#" class="fa fa-youtube"></a><br>
-            <a href="#" class="fa fa-linkedin"></a>
+            <a id="facebook" class="fa fa-facebook"></a><br> 
+            <a id="instagram" class="fa fa-instagram"></a><br>
+            <a id="youtube" class="fa fa-youtube"></a><br>
+            <a id="linkedin" class="fa fa-linkedin"></a>
         </div>
     </main>
     <footer>
-        <div class="footerbox">
+        <div class="block--footer">
                 <div>
-                    <ul class="links">
+                    <ul class="block--footer--links">
                         <h4>Social Media:</h4>
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                        <li><a href="#" class="fa fa-youtube"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>                       
+                        <li><a id="facebook" class="fa fa-facebook"></a></li>
+                        <li><a id="instagram" class="fa fa-instagram"></a></li>
+                        <li><a id="youtube" class="fa fa-youtube"></a></li>
+                        <li><a id="linkedin" class="fa fa-linkedin"></a></li>                       
                     </ul>
                 </div>
                 <div>
-                    <ul class="pages">
+                    <ul class="block--footer--pages">
                         <h4>Pages</h4>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Experiences</a></li>
-                        <li><a href="">Works</a></li>
+                        <li><a href="./HomePage.html">Home</a></li>
+                        <li><a href="./Services.html">Services</a></li>
+                        <li><a href="./Experiences.html">Experiences</a></li>
+                        <li><a href="./Works.html">Works</a></li>
                     </ul>
                 </div>
         </div>
         <h5>Copyright &copy; 2023 Daniel Asrat</h5>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>
