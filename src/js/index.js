@@ -5,30 +5,41 @@
   var Linkedin = document.getElementById('linkedin');
 
   
-  myButton.addEventListener('click', function() {
-    
-      var filePath = './contact-me.html';
+  var ContactButton = document.getElementById('button_contact');
+  var Hire_me = document.getElementById('Hire_me');
 
-    
+
+  ContactButton.addEventListener('click', function() {
+      var filePath = './contact-me.html';
       window.location.href = filePath;
   });
 
-  Facebook.addEventListener('click', function() {
+  Hire_me.addEventListener('click', function() {
+    var filePath = './contact-me.html';
+    window.location.href = filePath;
+  });
 
-    location.href = "https://www.facebook.com";
+  function downloadCv(){
+    var filePath = './DanielAsratCV.pdf'
+    window.open(filePath)
+  }
+
+  Facebook.addEventListener('click', function() {
+    window.open("https://www.facebook.com/profile.php?id=100079797836024", "_blank");
+
   })
 
   Instagram.addEventListener('click', function() {
-
-    location.href = "https://www.instagram.com";
+    window.open("https://www.instagram.com/_danielasrat/", "_blank");
+    
   })
 
   Youtube.addEventListener('click', function() {
-
-    location.href = "https://www.youtube.com";
+    window.open("https://www.youtube.com/@ADTech_Tube", "_blank");
+    
   })
 
   Linkedin.addEventListener('click', function() {
-
-    location.href = "https://www.linkedin.com";
+    window.open("https://www.linkedin.com/in/danielasrat/", "_blank");
+    
   })
